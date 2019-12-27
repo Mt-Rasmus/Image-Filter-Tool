@@ -44,7 +44,7 @@ body {
     /*padding: 20px 5px 100px 5px; /* same as right section */
     padding: 20px 5px 0px 5px;
     width: 0fr;
-    height: 88.5%;
+    height: 91%;
     display: block;
     border-style: solid;
     border-color: rgba(150,150,150,1.0);
@@ -93,7 +93,7 @@ body {
 .button-large {
     font-family: "Trebuchet MS", Helvetica, sans-serif;
     font-size: 14px;
-    margin: 0;
+    margin: 7px 0 0 0;
     padding: 0;
     width: 110px;
     height: 30px; /* The same as line-height */
@@ -119,7 +119,7 @@ body {
     width: 90%;
     /*height: 540px;*/
     padding: 10px 5px 10px 5px;
-    height: 88.5%;
+    height: 91%;
     position: center;
     margin: auto 12px auto auto;
     margin: 10px 10px 10px 5px;
