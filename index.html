@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Page Title</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Gothic+A1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">  
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <header>
+        <p class = "headline">Image Filter Tool</p>
+    </header>
+    <script src="lib/jQuery.js"></script>
+    <div class = "container"> 
+        <div class = "left-section">  
+            <div class = "btn-row">
+            <p class="btn-label">Brightness</p>        
+                <div class = "row">
+                    <a href="#" class="button" id="incrBrightness">+</a> 
+                    <a href="#" class="button" id="decrBrightness">-</a>
+                </div>
+            </div>
+            <div class = "btn-row">
+                <p class="btn-label">Saturation</p>
+                    <div class = "row">
+                        <a href="#" class="button" id="incrSaturation">+</a> 
+                        <a href="#" class="button" id="decrSaturation">-</a>
+                    </div>
+            </div>            
+            <div class = "btn-row">
+            <p class="btn-label">Contrast</p>
+                <div class = "row">
+                    <a href="#" class="button" id="incrContrast">+</a> 
+                    <a href="#" class="button" id="decrContrast">-</a>
+                </div>
+            </div>
+            <div class = "btn-row">
+            <p class="btn-label">Hue Rotation</p>
+                <div class = "row">
+                    <a href="#" class="button" id="incrHueRot">+</a> 
+                    <a href="#" class="button" id="decrHueRot">-</a>
+                </div>
+            </div>
+            <div class = "btn-row">
+            <p class="btn-label">Blur</p>
+                <div class = "row">
+                    <a href="#" class="button" id="incrBlur">+</a> 
+                    <a href="#" class="button" id="decrBlur">-</a>
+                </div>
+            </div> 
+            <div class = "btn-row">
+            <p class="btn-label">Opacity</p>
+                <div class = "row">
+                    <a href="#" class="button" id="incrOpacity">+</a> 
+                    <a href="#" class="button" id="decrOpacity">-</a>
+                </div>
+            </div>
+            <div class = "btn-row">
+                <p class="btn-label">Sepia</p>
+                    <div class = "row">
+                        <a href="#" class="button" id="incrSepia">+</a> 
+                        <a href="#" class="button" id="decrSepia">-</a>
+                    </div>
+            </div>
+            <!-- large buttons -->
+            <div class = "row">
+                <a href="#" class="button button-large" id="toggleGrey">Greyscale</a>
+            </div>
+            <div class = "row">
+                <a href="#" class="button button-large" id="toggleInverse">Inverse</a>
+            </div>
+            <div class = "row">
+                <a href="#" class="button button-large button-nf" id="resetFilters">Reset</a>
+            </div>
+            <div class = "row">
+                <a href="#" class="button button-large button-nf" id="clearImage">Clear</a>
+            </div>
+            <div class = "row">
+                <a href="#" class="button button-large button-nf" download="myimageasdsad.jpg" id="saveImg">Save Image</a>
+            </div>
+        </div>
+        <div class = "right-section" id="right-sec">
+            <!-- drop area -->
+            
+            <div id="droparea">
+                <div class="dropareainner">
+                    <p class="dropfiletext">Drop image file here</p>
+                    <p>or</p>
+                    <p><input id="uploadbtn" class="uploadbtn" type="button" value="Select File"/></p>
+                    <!-- extra feature -->
+                    <p id="err"><!-- error message --></p>
+                </div>
+                <input id="upload" type="file" multiple />
+            </div>
+
+            <!-- Image -->            
+            <img src="#" alt="Image can't be shown" class="img" id="img1" 
+            data-bright ="100" data-sat="100" data-cont = "100" 
+            data-hue = "0" data-blur = "0" data-opacity = "100" 
+            data-sepia="0" data-grey="0" data-invert="0">
+
+            </div>
+    </div>
+    <script src="js/imgChange.js"></script> 
+    <script src="js/dragNdrop.js"></script> 
+</body>
+
+
+</html>
